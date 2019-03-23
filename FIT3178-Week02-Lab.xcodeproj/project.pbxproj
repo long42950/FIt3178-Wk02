@@ -12,6 +12,8 @@
 		FA86D78A223792A600FC9E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA86D788223792A600FC9E84 /* Main.storyboard */; };
 		FA86D78C223792A700FC9E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA86D78B223792A700FC9E84 /* Assets.xcassets */; };
 		FA86D78F223792A700FC9E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA86D78D223792A700FC9E84 /* LaunchScreen.storyboard */; };
+		FA86D797223792E100FC9E84 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86D796223792E100FC9E84 /* Person.swift */; };
+		FA86D7992237937400FC9E84 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86D7982237937400FC9E84 /* HouseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		FA86D78B223792A700FC9E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA86D78E223792A700FC9E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA86D790223792A700FC9E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA86D796223792E100FC9E84 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA86D7982237937400FC9E84 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		FAE3493B223907A50058BE19 /* FIT3178-Week02-Lab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FIT3178-Week02-Lab.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +59,15 @@
 		FA86D783223792A600FC9E84 /* FIT3178-Week02-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				FAE3493B223907A50058BE19 /* FIT3178-Week02-Lab.entitlements */,
 				FA86D784223792A600FC9E84 /* AppDelegate.swift */,
 				FA86D786223792A600FC9E84 /* ViewController.swift */,
 				FA86D788223792A600FC9E84 /* Main.storyboard */,
 				FA86D78B223792A700FC9E84 /* Assets.xcassets */,
 				FA86D78D223792A700FC9E84 /* LaunchScreen.storyboard */,
 				FA86D790223792A700FC9E84 /* Info.plist */,
+				FA86D796223792E100FC9E84 /* Person.swift */,
+				FA86D7982237937400FC9E84 /* HouseViewController.swift */,
 			);
 			path = "FIT3178-Week02-Lab";
 			sourceTree = "<group>";
@@ -96,6 +104,11 @@
 				TargetAttributes = {
 					FA86D780223792A600FC9E84 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA86D797223792E100FC9E84 /* Person.swift in Sources */,
 				FA86D787223792A600FC9E84 /* ViewController.swift in Sources */,
 				FA86D785223792A600FC9E84 /* AppDelegate.swift in Sources */,
+				FA86D7992237937400FC9E84 /* HouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,14 +297,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "FIT3178-Week02-Lab/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chaklee.FIT3178-Week02-Lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +318,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "FIT3178-Week02-Lab/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chaklee.FIT3178-Week02-Lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
